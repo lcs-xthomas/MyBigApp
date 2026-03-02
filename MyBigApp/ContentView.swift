@@ -7,15 +7,54 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        VStack(spacing:20){
+            
+            Text("Tracker")
+            .fontWeight(.black)
+            .font(.largeTitle)
+            Rectangle()
+                .frame(width: 500, height: 1)
+                Spacer()
+            
+            
+            
         }
-        .padding()
+       
+    
+      
+        VStack {
+        
+
+            HStack {
+                Rectangle()
+                
+                      .frame(width: 120, height:150)
+            
+                  Rectangle()
+                        .frame(width: 120, height:150)
+
+            }
+
+            HStack{
+
+                Rectangle()
+                      .frame(width: 120, height:150)
+
+
+                  Rectangle()
+                        .frame(width: 120, height:150)
+
+
+
+            }
+            .padding()
+
+        }
+
     }
 }
 
